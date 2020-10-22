@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <main id="main">
+        <div class="account-controls">
+            <a href="/">Back to the website</a>
+            <a href="/logout">Logout</a>
+        </div>
+        <section class="admin">
+            <h1 class="title">My Contact List</h1>
+            <table class="contact-list">
+                <tr>
+                    <th>Contact Name</th>
+                    <th>Contact Number</th>
+                    <th>Contact Email</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <% for(var i=0; i < global_data.contact_list.length; i++) { %>
+                    <tr>
+                      <td><%= global_data.contact_list[i].name %></td>
+                      <td><%= global_data.contact_list[i].number %></td>
+                      <td><%= global_data.contact_list[i].email %></td>
+                      <td><a href="/update/<%= global_data.contact_list[i]._id %>">Update</a></td>
+                      <td><a href="/delete/<%= global_data.contact_list[i]._id %>">Delete</a></td>
+                    </tr>
+                 <% } %>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

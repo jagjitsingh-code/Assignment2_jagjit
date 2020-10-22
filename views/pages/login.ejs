@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/header'); %>
+    </header>
+    <main id="main">
+        <section class="login">
+            <form method="GET" action="/login/auth/" id="login-form" class="form-s1">
+                <h1 class="caption">Login</h1>
+                <div class="fieldgroup"><input autocomplete="off" type="text" name="username" class="textbox" placeholder="Your Name"/></div>
+                <div class="fieldgroup"><input type="password" name="password" class="textbox" placeholder="Your Password"/></div>
+                <div class="fieldgroup">
+                    <%= global_data.auth_status %><br/>
+                    <input class="button" type="submit" value="Login"/>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

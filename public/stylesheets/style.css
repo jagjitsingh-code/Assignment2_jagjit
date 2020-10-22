@@ -1,0 +1,64 @@
+/*
+	Filename: style.css
+	Name: Jagjit Singh
+	Student ID: 301106044
+	Date: 2020-09-29
+*/
+main{padding:20px;}
+
+.button{display:inline-block;transition:background-color 0.4s;padding:15px 20px;font-size:14px;background:rgba(0,0,0,0.1);color:black;border-radius:5px;margin:20px 0;max-width:150px;text-align:center;border:none;outline:none;}
+.button:hover{background:rgba(0,0,0,0.2);}
+
+.welcome-message{background:#351A40;max-width:600px;margin:50px auto;min-width:330px;color:white;padding:20px;border-radius:10px;}
+.mission-statement{background:#eee;border:1px solid purple;color:black;padding:40px 20px;margin:50px auto;max-width:1000px;}
+
+.section-aboutme{border-radius:10px;color:white;max-width:1000px;padding:20px;background:#351A40;margin:50px auto;}
+.section-aboutme .display-pic{max-width:250px;height:auto;border-radius:10px;}
+.section-aboutme .profile-description{margin:40px 0;max-width:700px;}
+.section-aboutme .title{font-size:42px;}
+
+.section-projects{padding:100px 20px;}
+.section-projects .section-title{text-align:center;margin:0 0 50px 0;font-size:32px;}
+.section-projects .cards-container{display:flex;justify-content: center;}
+.section-projects .image-card-1{margin:0 25px;}
+
+.section-services{max-width:1000px;margin:100px auto;text-align:center;}
+.section-services .section-title{font-size:38px;margin-bottom:40px;color:#351A40;}
+.section-services .service{max-width:800px;margin:30px auto;color:black;text-align:left;border:1px solid purple;}
+.section-services .service .trigger{background:#eee;border-bottom:1px solid purple;width:100%;padding:20px;margin:0;}
+.section-services .service .service-content{width:100%;padding:20px;}
+.section-services .service .service-content:not(:first-of-type){display:none;}
+
+.section-contact{max-width:1000px;padding:20px;margin:50px auto;border-radius:10px;background:#351A40;color:white;}
+.section-contactform{max-width:1000px;padding:20px;margin:50px auto;border-radius:10px;background:#351A40;color:white;}
+.section-contactform .if-s1{display:block;border-radius:5px;max-width:360px;min-width:300px;margin:10px 0;padding:15px;border:none;outline:none;}
+
+.login{max-width:380px;padding:20px;margin:70px auto;border-radius:10px;background:#351A40;color:#fff;text-align:center;}
+.login .form-s1 .textbox{border-color:white;background:white;}
+.login .caption{margin:10px 0;color:white;font-size:42px;margin-bottom:40px;}
+
+.admin{max-width:1100px;padding:20px;margin:20px auto;border-radius:10px;color:#fff;text-align:center;}
+.admin .title{margin:10px 0;color:black;font-size:42px;margin-bottom:40px;}
+
+.contact-list{border-collapse: collapse;min-width:600px;border-radius:0px;overflow:hidden;color:black;margin:0 auto;}
+.contact-list th{background:#5499C7;color:white;padding:20px;}
+.contact-list td{padding:15px;}
+.contact-list tr:nth-child(even){background:#eee;}
+.contact-list tr:nth-child(odd){background:#ddd;}
+.contact-list a{display:block;background:#222;color:white;padding:10px;border-radius:5px;font-size:14px;}
+.contact-list a:hover{background:#555;}
+
+.update{max-width:580px;padding:20px;margin:20px auto;border-radius:10px;background:#fff;color:#000;text-align:center;}
+.update .form-s1{margin:0 auto;text-align:center;}
+.update .form-s1 .textbox{width:100%;}
+.update .title{margin:10px 0;font-size:42px;margin-bottom:40px;}
+
+.form-s1{padding:20px;border-radius:10px;max-width:500px;}
+.form-s1 .fieldgroup{padding:10px 0;}
+.form-s1 .textbox{padding:15px;font-size:16px;border:none;background:rgba(0,0,0,0.050);min-width:240px;border-radius:5px;border:2px solid #999;}
+.form-s1 .textbox:focus{outline:none;}
+.form-s1 .button{background:black;border-radius:5px;min-width:120px;text-align:center;color:white;}
+.form-s1 .button:hover{background-color:#111;}
+
+.account-controls{padding:20px;border-radius:10px;margin:0 auto;max-width:400px;text-align:center;}
+.account-controls a{min-width:100px;text-align:center;background:black;color:white;border-radius:5px;padding:15px;font-size:14px;margin:15px;display:inline-block;vertical-align:top;}

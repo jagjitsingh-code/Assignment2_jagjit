@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/header'); %>
+    </header>
+    <main id="main">
+       <section class="section-contact">
+            <h1 class="caption">Contact</h1>
+            <table class="table-s1">
+                <tr>
+                    <td>Name</td>
+                    <td>Jagjit Singh</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>jagjit.singh1128@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Brampton, ON</td>
+                </tr>
+            </table>
+       </section>
+       <section class="section-contactform">
+            <h1 class="caption">Contact Form</h1>
+            <p>
+                You can contact me for any work related or general queries via this form or the contact info provided in the above section.<br/>
+
+                I will try to reply as soon as I can. Thanks.<br/><br/>
+            </p>
+            <form method="GET" id="contact-form">
+                <input id="cf-name" class="if-s1" placeholder="Name"/>
+                <input id="cf-email" class="if-s1" placeholder="Email"/>
+                <input id="cf-msg" class="if-s1" placeholder="Message"/>
+                <input class="btn-s1" type="submit" value="Send Message"/>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

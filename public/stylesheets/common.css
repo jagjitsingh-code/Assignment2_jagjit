@@ -1,0 +1,79 @@
+/*
+	Filename: style.css
+	Name: Jagjit Singh
+	Student ID: 
+	Date: 2020-09-29
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+html, body{padding:0;margin:0;min-height:100%;overflow-x:hidden;text-rendering: optimizeLegibility !important;-webkit-font-smoothing: antialiased !important;}
+body{font-family:'Nanum Gothic',sans-serif;}
+*{box-sizing:border-box;}
+
+a{color:unset;text-decoration: none;}
+p{font-size:14px;line-height:160%;}
+
+.logo{max-width:60px;}
+.logo img{max-width:100%;height:auto;}
+
+.shadow-center{box-shadow:
+    0 1.1px 2.2px rgba(0, 0, 0, 0.011),
+    0 2.7px 5.3px rgba(0, 0, 0, 0.016),
+    0 5px 10px rgba(0, 0, 0, 0.02),
+    0 8.9px 17.9px rgba(0, 0, 0, 0.024),
+    0 16.7px 33.4px rgba(0, 0, 0, 0.029),
+    0 40px 80px rgba(0, 0, 0, 0.04)
+  ;  
+}
+
+.shadow-center-strong{
+    box-shadow:
+    0 0px 39.5px rgba(0, 0, 0, 0.009),
+    0 0px 68.2px rgba(0, 0, 0, 0.013),
+    0 0px 89.6px rgba(0, 0, 0, 0.017),
+    0 0px 113.8px rgba(0, 0, 0, 0.021),
+    0 0px 208px rgba(0, 0, 0, 0.03)
+  ;
+}
+
+.btn-s1{display:inline-block;padding:15px 20px;font-size:14px;background:white;color:black;border-radius:5px;margin:20px 0;max-width:150px;text-align:center;border:none;outline:none;}
+
+section .caption{font-size:38px;margin-top:20px;}
+
+.table-s1{border-collapse: collapse;overflow:hidden;border-radius:10px;}
+.table-s1 td{padding:15px;min-width:120px;background:rgba(255,255,255,0.2);}
+
+.image-card-1{position:relative;max-width:370px;min-width:300px;background:#fff;color:#000;border:1px solid purple;}
+.image-card-1 .image{position:relative;width:100%;}
+.image-card-1 img{width:100%;height:auto;margin-left:-0.2px;}
+.image-card-1 .content{}
+.image-card-1 .content p{margin:10px 0;padding:20px 20px;}
+.image-card-1 .title{position:relative;color:black;font-size:24px;padding:20px;padding-bottom:0;margin:0;}
+.image-card-1 .nav{border-top:1px solid #ddd;padding:15px 20px;}
+.image-card-1 .nav a{color:purple;display:inline-block;vertical-align:bottom;text-transform:uppercase;text-decoration:none;transition:color 0.3s;}
+.image-card-1 .nav a:not(:first-of-type){margin:0 10px;}
+.image-card-1 .nav a:hover{color:#000;}
+
+
+#header{width:100%;}
+#header .inner{padding:10px 20px;display:flex;align-items: center}
+#header .nav-container{display:inline-block;margin:0 0 0 auto;max-width:700px;text-align:center;}
+#header nav a{margin:0 15px;}
+#header nav a:hover{color:purple;}
+
+#footer{width:100%;padding:20px;color:#fff;background:#351A40;}
+#footer .copyright{text-align:center;margin:10px auto;}
+
+@media (max-width: 700px) 
+{
+  #header .inner{display:block;text-align:center;}
+  #header .logo{margin:0 auto;margin-bottom:15px;}
+  #header nav a{display:block;width:100%;padding:15px;margin:0;}
+}
+
+@media (max-width: 1200px) 
+{
+  .section-projects .cards-container{display:block !important;text-align:center;}
+  .section-projects .image-card-1{display:block;margin:50px auto !important;}
+}
+	
